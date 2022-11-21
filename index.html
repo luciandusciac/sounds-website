@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sabapaleopa</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style type="text/css">
+	@import url('hhtps://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+
+	*{
+		margin: 0;
+		padding: auto;
+		box-sizing: border-box;
+	}
+	body{
+		width: 100%;
+		height: 100vh;
+		background-color: #7c6ea7;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	h1, h2, h3, h4{
+		display: flex;
+		flex-direction: row;
+	}
+	footer{
+		text-align: center;
+		margin-top: auto;
+		position: relative;
+		color: white;
+		font-weight: bold;
+	}
+	#btn{
+		width: 150px;
+		height: 90px;
+		border-width: 4px;
+		border-radius: 35px;
+		font-size: 17px;
+		font-weight: bold;
+		color: white;
+		background-color: orange;
+		cursor: pointer;
+		margin: 10px;
+		font-family: 'Aclonica';
+	}
+	#btn:active{
+		font-size: 18px;
+		color: red;
+	}
+	p{
+		position: relative;
+		font-size: 70px;
+		font-weight: 700;
+		top: 12px;
+		color: darkblue;
+		font-family: 'Calligraffitti', cursive;
+		text-shadow: -15px 5px 20px #ced0d3;
+		letter-spacing: 0.02em;
+		color: #F9f1cc;
+		text-shadow: 1px 1px 0px #FFB650,
+			2px 2px 0px #FFD662,
+			3px 3px 0px #FF80BF,
+			4px 4px 0px #EF5097,
+			5px 5px 0px #6868AC,
+			6px 6px 0px #90B1E0;
+	}
+	.video{
+		position: absolute;
+		right: 0;
+		bottom 0;
+		z-index: -1;
+		opacity: 20%;
+		width: 100%;
+                height: 100vh;
+	}
+	@media (min-aspect-ratio: 16/9){
+		.video{
+			width: 100%;
+			height: auto;
+		}
+	}
+	@media (max-aspect-ratio: 16/9){
+                .video{
+                        width: auto;
+                        height: 100%;
+                }
+        }
+
+
+</style>
+<p>The sounds of childhood...</p>
+</head>
+<body>
+
+<video autoplay loop muted class="video">
+	<source src="./background.mp4" type="video/mp4">
+</video>
+
+<div id="buttons">
+<h1>
+<button id="btn" onclick="sabapaleopa.play();">Sabapaleopa</button>
+<button id="btn" onclick="trro.play();">Trro</button>
+<button id="btn" onclick="taciCacatule.play();">Taci,cacatule</button>
+<button id="btn" onclick="okizdiuk.play();">Okizdiuk</button>
+<button id="btn" onclick="poveste.play();">Poveste</button>
+</h1>
+<h2>
+<button id="btn" onclick="besina.play();">Besina</button>
+<button id="btn" onclick="panos.play();">Panos</button>
+<button id="btn" onclick="nice.play();">Nice</button>
+<button id="btn" onclick="gez.play();">Gez</button>
+<button id="btn" onclick="tui.play();">Tui</button>
+</h2>
+<h3>
+<button id="btn" onclick="moldtelecom.play();">Moldtelecom</button>
+<button id="btn" onclick="funny.play();">Funny</button>
+<button id="btn" onclick="suiii.play();">Suiii</button>
+<button id="btn" onclick="respect.play();">Respect</button>
+<button id="btn" onclick="masaj.play();">Masaj</button>
+</h3>
+<h4>
+<button id="btn" onclick="taoled.play();">Taoled</button>
+<button id="btn" onclick="aughhh.play();">Aughhh</button>
+<button id="btn" onclick="pasaaa.play();">Pasaaa</button>
+<button id="btn" onclick="alcagoli.play();">Alcagoli</button>
+<button id="btn" onclick="uiuaa.play();">U I U AA</button>
+</h4>
+</div>
+
+<script type="text/javascript">
+	const panos = new Audio();
+	const besina = new Audio();
+	const nice = new Audio();
+	const suiii = new Audio();
+	const taoled = new Audio();
+	const aughhh = new Audio();
+	const masaj = new Audio();
+	const okizdiuk = new Audio();
+	const gez = new Audio();
+	const respect = new Audio();
+	const alcagoli = new Audio();
+	const tui = new Audio();
+	const poveste = new Audio();
+	const uiuaa = new Audio();
+	const pasaaa = new Audio();
+	const moldtelecom = new Audio();
+	const funny = new Audio();
+	const trro = new Audio();
+	const taciCacatule = new Audio();
+	const sabapaleopa = new Audio();
+	panos.src = "./fart-meme-sound.mp3";
+	besina.src = "./dry-fart.mp3";
+	nice.src = "./its-a-very-nice.mp3";
+	suiii.src = "./suiiiiiiiiiii.mp3";
+	taoled.src = "./indian-music-mp3cut.mp3";
+	aughhh.src = "./aughhhhh-aughhhhh.mp3";
+	masaj.src = "./masaj.mp3";
+	okizdiuk.src = "./okizdiuk.mp3";
+	gez.src = "./gez.mp3";
+	respect.src = "./respect.mp3";
+	alcagoli.src = "./alcagoli.mp3";
+	tui.src = "./tui.mp3";
+	poveste.src = "./poveste.mp3";
+	uiuaa.src = "./uiuaa.mp3";
+	pasaaa.src = "./pasaaa.mp3";
+	moldtelecom.src = "./moldtelecom.mp3";
+	funny.src = "./funny.mp3";
+	trro.src = "./trro.mp3";
+	taciCacatule.src = "./taci,cacatule.mp3";
+	sabapaleopa.src = "./sabapaleopa.mp3";
+</script>
+
+
+</body>
+
+<footer>Made by Lucian Dusciac</footer>
+
+
+</html>
+
